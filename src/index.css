@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 99.2%;
+        --foreground: 210 10% 18%;
+        --card: 0 0% 100%;
+        --card-foreground: 210 10% 18%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 210 10% 18%;
+        --primary: 210 10% 18%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 30 4% 89%;
+        --secondary-foreground: 210 10% 18%;
+        --muted: 30 4% 96%;
+        --muted-foreground: 0 0% 40%;
+        --accent: 21 90% 48%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 65% 51%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 0% 90%;
+        --input: 0 0% 90%;
+        --ring: 210 10% 18%;
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
